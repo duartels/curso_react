@@ -1,0 +1,7 @@
+body{
+    background-color: #2c5467;
+    background-image: url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}

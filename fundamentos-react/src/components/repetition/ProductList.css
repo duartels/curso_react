@@ -1,0 +1,14 @@
+.productList{
+    display: flex;
+    justify-content: center;
+}
+
+.productList .table{
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.productList td, th{
+    border: 1px solid;
+}

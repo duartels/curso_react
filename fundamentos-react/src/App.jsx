@@ -6,10 +6,15 @@ import Family from './components/basics/Family'
 import Member from './components/basics/Member'
 import StudantList from './components/repetition/StudantList'
 import ProductList from './components/repetition/ProductsList'
+import EvenOdd from './components/conditional/EvenOdd'
+import UserInfo from './components/conditional/UserInfo'
 
 import First from './components/basics/First'
 import Parameter from './components/basics/Parameter'
 import Random from './components/basics/Random'
+import FatherDir from './components/communication/FatherDir'
+import FatherInd from './components/communication/FatherInd'
+import Input from './components/forms/Input'
 
 export default (props) => {
     return(
@@ -17,6 +22,23 @@ export default (props) => {
             <h1>Fundamentos React</h1>
 
             <div className="cards">
+                <Card title="#10 - Comunicação Controlado" color="#E45F56">
+                    <Input/>
+                </Card>
+
+                <Card title="#09 - Comunicação Indireta" color="#8BAD39">
+                    <FatherInd/>
+                </Card>
+
+                <Card title="#08 - Comunicação Direta" color="#59323C">
+                    <FatherDir/>
+                </Card>
+
+                <Card title="#07 - Renderização Condicional" color="#982395">
+                    <EvenOdd number={20}> </EvenOdd>
+                    <UserInfo user={{name: 'Luan'}} />
+                </Card>
+
                 <Card title="#06 - Desafio Repetição" color="#FF4C65">
                     <ProductList> </ProductList>
                 </Card>
